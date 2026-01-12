@@ -81,7 +81,7 @@ while True:
             print("Додавання нового курса.\n")
             while True:
                 name = input("Ім'я нового курса: ")
-                if not name.isalpha():
+                if name.isdecimal() and not name.isidentifier():
                     print("\nВиникла помилка, введіть назву курса правильно!\n")
                 else:
                     instruktor = input("Ім'я викладача курса: ")
